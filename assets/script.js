@@ -121,11 +121,16 @@ startButton.addEventListener("click", startQuiz);
 backButton.addEventListener("click", goBack);
 clearScoresButton.addEventListener("click", clearHighScores);
 saveScoreButton.addEventListener("click", saveScore);
-viewHighScores.addEventListener("click", showHighScores);
 option1.addEventListener("click", checkAnswer);
 option2.addEventListener("click", checkAnswer);
 option3.addEventListener("click", checkAnswer);
 option4.addEventListener("click", checkAnswer);
+viewHighScores.addEventListener("click", function(event) {
+    event.preventDefault(); 
+    showHighScores();
+  });
+
+
 
 function startQuiz() {
   // Hide the home section and display the active quiz section
@@ -247,3 +252,6 @@ function goBack() {
     timeLeft = 60;
     timerCount.textContent = timeLeft;
   }
+
+  
+  
