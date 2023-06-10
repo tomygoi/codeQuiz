@@ -197,6 +197,7 @@ function checkAnswer(event) {
 }
 
 function saveScore() {
+    resultsSection.style.display = "none";
   const initials = initialsInput.value.trim();
   if (initials !== "") {
     const score = {

@@ -1,8 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
 nav {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
 }
 
+nav a {
+    text-decoration: none;
+    color: rgb(181,74,228)
+}
 
+h1 {
+    text-align: center;
+}
 
+.container {
+    justify-content: center;
+    text-align: center;
+}
+
+#instructions {
+    display:flex;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(50,26,115) ;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8%;
+}
+
+button:hover {
+    background-color: rgb(181,74,228) ;
+}
+
+button:active {
+    background-color: rgb(122,104,162);
+}
+
+#active-quiz {
+    justify-content: center;
+    flex: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#results {
+    flex: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#high-scores {
+    
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-position:inside;
+}
+
+/* rgb(50,26,115) */
