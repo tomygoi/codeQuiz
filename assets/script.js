@@ -172,7 +172,18 @@ function checkAnswer(event) {
   const selectedOption = event.target.id;
   const question = questions[currentQuestionIndex];
 
-  if (selectedOption === question.correctOption) {
+  let correctOption;
+  if (selectedOption === "option1") {
+    correctOption = "optionA";
+  } else if (selectedOption === "option2") {
+    correctOption = "optionB";
+  } else if (selectedOption === "option3") {
+    correctOption = "optionC";
+  } else if (selectedOption === "option4") {
+    correctOption = "optionD";
+  }
+
+  if (correctOption === question.correctOption) {
     // Correct answer
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -182,7 +193,7 @@ function checkAnswer(event) {
     }
   } else {
     // Incorrect answer
-    timeLeft -= 10; 
+    timeLeft -= 10;
     if (timeLeft <= 0) {
       endQuiz();
     } else {
